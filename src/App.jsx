@@ -1,5 +1,4 @@
-import skills from '../skills.json'
-import projects from '../projects.json'
+import data from '../data.json'
 import { Email, GitHub, LinkedIn, X } from '@mui/icons-material'
 import { Badge } from "./components/ui/badge"
 import ProjectDisplay from './components/ProjectDisplay'
@@ -63,7 +62,7 @@ const App = () => {
         <section>
           <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-xs sm:text-sm">
             <h1 className="font-bold text-xl sm:text-2xl mb-4 text-white">Skills</h1>
-            {Object.entries(skills).map(([category, items]) => (
+            {Object.entries(data["skills"]).map(([category, items]) => (
               <div key={category} className="mb-4 text-white">
                 <span className="text-white mb-2 mr-3 block sm:inline text-sm sm:text-base">{category}</span>
                 <div className="flex-wrap gap-1 sm:gap-2 flex mt-2 sm:mt-0 sm:inline-flex">
@@ -77,8 +76,17 @@ const App = () => {
         <section id="Projects">
           <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-xs sm:text-sm">
             <h1 className="font-bold text-xl sm:text-2xl text-white mb-4">Projects</h1>
-            {Object.entries(projects).map(([Title, details]) => (
+            {Object.entries(data["Projects"]).map(([Title, details]) => (
               <ProjectDisplay key={Title} title={Title} details={details} />
+            ))}
+          </div>
+        </section>
+        <hr className="my-5 border-zinc-800" />
+        <section id="Blogs">
+          <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-xs sm:text-sm">
+            <h1 className="font-bold text-xl sm:text-2xl text-white mb-4">Blogs</h1>
+            {Object.entries(data["blogs"]).map(([title, details]) => (
+              <ProjectDisplay key={title} title={title} details={details} />
             ))}
           </div>
         </section>
