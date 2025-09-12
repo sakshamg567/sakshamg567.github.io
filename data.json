@@ -20,10 +20,10 @@
          "stack": "Javascript, NodeJS, yt-dlp",
          "link": "https://pastty.vercel.app"
       },
-      "url-shortener": {
-         "description": "A Simple URL Shortener with auth",
-         "stack": "Javascript, NodeJS, ejs",
-         "github": "https://github.com/sakshamg567/URL-Shortener"
+      "miniurl": {
+         "description": "A URL URL-Shortener built with microservice architecture",
+         "stack": "Golang",
+         "github": "https://github.com/sakshamg567/miniurl"
       }
    },
    "skills": {
@@ -31,7 +31,8 @@
          "Javascript",
          "Typescript",
          "C",
-         "C++"
+         "C++",
+         "Golang"
       ],
       "Frontend": [
          "Next.js",
@@ -62,6 +63,10 @@
       "WebSockets 101 — Rolling your own Websocket Server": {
          "description": "Deep Dive into working of the websocket protocol, understanding the need, pros, cons and functionality of them, with a hands on tutorial on building your own websocket server from scratch",
          "link": "https://medium.com/@skshmgpt/websockets-101-rolling-your-own-websocket-server-ac9191756b60"
-      }
+      },
+      "How LinkedIn finds your friends in Real Time" : {
+         "description": "Ever wondered how Linkedin instantly knows if someone’s your 2nd or 3rd connection, in a graph with millions of members and billions of connections?",
+         "link": "https://medium.com/@skshmgpt/the-math-behind-linkedins-real-time-social-network-4ccc62659503"
+    }
    }
 }
