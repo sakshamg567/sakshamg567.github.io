@@ -24,6 +24,11 @@
       "description": "URL-Shortener built with microservice architecture",
       "stack": "Golang",
       "github": "https://github.com/sakshamg567/miniurl"
+    },
+    "getsetgo": {
+      "description": "A simple redis clone built in go, compatible with resp-protocol",
+      "stack": "Golang",
+      "github": "https://github.com/sakshamg567/getsetgo"
     }
   },
   "skills": {

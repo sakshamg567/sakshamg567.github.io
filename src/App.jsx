@@ -47,15 +47,24 @@ const App = () => {
         </div>
         <section id='about'>
           <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-sm">
-            <p className="mb-3">
-              I’m <span className="font-bold text-white">Saksham</span> a 19 year CS undergrad and self-taught <span className="font-bold text-white">developer</span>. I love to write code, and ship <span className="font-bold text-white">cool</span>  software.
+             <span className="font-bold text-white text-xl" >About Me</span> 
+            <p className="mb-3 text-white mt-2">
+              code, computer and music, pretty much sums me up.
             </p>
-            <p className="mb-3">
-              Been programming for around 2 years now, i built and broke many things. The advent of ChatGPT led me to fall in love with computer science.
+            <p className="mb-3 text-white mt-2">
+              doing cool stuff
             </p>
-            <p>
-              I spend most of my time either <span className="text-white font-bold">coding</span>, or watching tech content. I sometimes write about my learnings also, here <a href="https://x.com/skshmgpt" className="font-bold text-white">@<span className="underline">skshmgpt</span></a>.
-            </p>
+
+
+          </div>
+        </section>
+                <hr className="my-5 border-zinc-800" />
+        <section id="Projects">
+          <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-xs sm:text-sm">
+            <h1 className="font-bold text-xl sm:text-2xl text-white mb-4">Projects</h1>
+            {Object.entries(data["Projects"]).map(([Title, details]) => (
+              <ProjectDisplay key={Title} title={Title} details={details} />
+            ))}
           </div>
         </section>
         <hr className="my-5 border-zinc-800" />
@@ -72,15 +81,7 @@ const App = () => {
             ))}
           </div>
         </section>
-        <hr className="my-5 border-zinc-800" />
-        <section id="Projects">
-          <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-xs sm:text-sm">
-            <h1 className="font-bold text-xl sm:text-2xl text-white mb-4">Projects</h1>
-            {Object.entries(data["Projects"]).map(([Title, details]) => (
-              <ProjectDisplay key={Title} title={Title} details={details} />
-            ))}
-          </div>
-        </section>
+
         <hr className="my-5 border-zinc-800" />
         <section id="Blogs">
           <div className="text-gray-400 leading-relaxed tracking-wide font-mono text-xs sm:text-sm">
